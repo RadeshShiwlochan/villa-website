@@ -9,9 +9,11 @@ app.set( 'view engine', 'ejs' );
 
 const homeController = require( './controllers/home.js' );
 const pictureController = require( './controllers/pictures.js' );
+const aboutController = require( './controllers/about.js' );
 
 app.get( '/', homeController.index );
 app.get( '/pictures', pictureController.pictureIndex );
+app.get( '/about', aboutController.aboutIndex );
 
 app.listen( port, () => {
 	console.log( `App is listening on port:${port}` );
