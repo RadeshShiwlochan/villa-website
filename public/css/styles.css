@@ -14,6 +14,11 @@
     grid-area: m;
 }
 
+.menuImage {
+    display:block;
+    margin:auto
+}
+
 .content {
     grid-area: c;
     padding: 10px;
@@ -28,6 +33,7 @@
 }
 
 .bookArea {
+    border: 1px solid black;
     height:200px;
-    width:200px;
+    width:100%;
 }
