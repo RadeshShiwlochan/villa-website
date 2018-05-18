@@ -12,6 +12,7 @@ const aboutController = require( './controllers/about.js' );
 const termsController = require( './controllers/terms.js' );
 const bookController = require( './controllers/book.js' );
 const contactController = require( './controllers/contact.js' );
+const attractionsController = require( './controllers/attractions.js' );
 
 app.get( '/', homeController.index );
 app.get( '/pictures', pictureController.pictureIndex );
@@ -19,7 +20,8 @@ app.get( '/about', aboutController.aboutIndex );
 app.get( '/terms-and-conditions', termsController.termsIndex );
 app.get( '/book', bookController.bookIndex );
 app.get( '/contact', contactController.contactIndex );
-app.get ( '/image', pictureController.pictureView );
+app.get( '/image', pictureController.pictureView );
+app.get( '/attractions', attractionsController.attractionsIndex );
 
 app.listen( port, () => {
 	console.log( `App is listening on port:${port}` );
