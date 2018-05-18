@@ -7,11 +7,15 @@
   </head>
   <body>
     <% include ./partials/navbar %>
-    <h1>View</h1>
-    <a href="/pictures" >Back to Pictures</a>
-    <div class="row">
-        <img src="images/<%=id%>" />
-    </div>
+    <!-- <div class="container"> -->
+      
+        <!-- <div class="col-md-8"> -->
+          <a href="/pictures" >Back to Pictures</a>
+          <img src="images/<%=id%>" class="img-fluid img-thumbnail rounded mx-auto d-block">
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <hr />
     <footer class="text-muted">
       <div class="container">
         <p>Mintra 2018</p>
