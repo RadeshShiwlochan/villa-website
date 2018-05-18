@@ -19,6 +19,7 @@ app.get( '/about', aboutController.aboutIndex );
 app.get( '/terms-and-conditions', termsController.termsIndex );
 app.get( '/book', bookController.bookIndex );
 app.get( '/contact', contactController.contactIndex );
+app.get ( '/image', pictureController.pictureView );
 
 app.listen( port, () => {
 	console.log( `App is listening on port:${port}` );
