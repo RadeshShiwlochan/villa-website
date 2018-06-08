@@ -7,10 +7,37 @@
 </head>
 <body>
   <% include ./partials/navbar %>
-    <h1>Book here</h1>
-    <hr />
-    <% include ./partials/footer %>
-  </body>
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Rate Period</th>
+            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Nightly</th>
+            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Weekend Night</th>
+            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Weekly</th>
+            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Monthly</th>
+            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              My Standard Rate <br />
+              Minimum Stay 5 Nights
+            </td>
+            <td>$125.00</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <% include ./partials/footer %>
+</body>
 </html>
 </body>
 </html>
