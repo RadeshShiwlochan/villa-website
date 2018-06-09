@@ -8,36 +8,72 @@
 <body>
   <% include ./partials/navbar %>
   <div class="container">
+    <h3 class="text-center addPadding">Rates and Availability</h3>
     <div class="table-responsive">
-      <table class="table">
+      <table class="table" style="border: solid black 1px">
         <thead>
           <tr>
-            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Rate Period</th>
-            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Nightly</th>
-            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Weekend Night</th>
-            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Weekly</th>
-            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Monthly</th>
-            <th class="bg-primary" scope="col" style="border-right: solid white 1px">Event</th>
+            <th class="bg-primary" scope="col" style="border-right: solid black 1px;color:white">Rate Period</th>
+            <th class="bg-primary" scope="col" style="border-right: solid black 1px;color:white">Nightly</th>
+            <th class="bg-primary" scope="col" style="border-right: solid black 1px;color:white">Weekend Night</th>
+            <th class="bg-primary" scope="col" style="border-right: solid black 1px;color:white">Weekly</th>
+            <th class="bg-primary" scope="col" style="border-right: solid black 1px;color:white">Monthly</th>
+            <th class="bg-primary" scope="col" style="border-right: solid black 1px;color:white">Event</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td style="border-right: solid black 1px">
               My Standard Rate <br />
               Minimum Stay 5 Nights
             </td>
-            <td>$125.00</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td style="border-right: solid black 1px">$125.00 USD</td>
+            <td style="border-right: solid black 1px">N/A</td>
+            <td style="border-right: solid black 1px">N/A</td>
+            <td style="border-right: solid black 1px">N/A</td>
+            <td style="border-right: solid black 1px">N/A</td>
           </tr>
         </tbody>
       </table>
     </div>
+    <h3 class="text-center addPadding">Additional Information about rental rates</h3>
+    <div class="table-responsive">
+        <table class="table" style="border: solid black 1px">
+          <tbody>
+            <tr>
+              <td style="border-right: solid black 1px; border-top:solid black 1px">
+                Refundable Damage Deposit 
+              </td>
+              <td style="border-top:solid black 1px">$300.00 USD</td>
+            </tr>
+            <tr>
+              <td style="border-right: solid black 1px">Pet Fee</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td style="border-right: solid black 1px">Cleaning Fee</td>
+              <td>$85.00</td>
+            </tr>
+            <tr>
+              <td style="border-right: solid black 1px">Taxes</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td style="border-right: solid black 1px">Payment Terms</td>
+              <td>
+                <strong>Owners Cancellation Policy</strong><br />
+                50% refund for cancellations more than 30 days before check-in date.<br />
+                100% refund for cancellations more than 60 days before check-in date.<br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=mintrasvilla%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+      </div>
+      
   </div>
   <% include ./partials/footer %>
-</body>
-</html>
 </body>
 </html>
