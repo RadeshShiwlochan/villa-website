@@ -23,6 +23,9 @@ app.get( '/contact', contactController.contactIndex );
 app.get( '/image', pictureController.pictureView );
 app.get( '/attractions', attractionsController.attractionsIndex );
 
+//post requests
+app.post( '/customerContact', contactController.contactForm );
+
 app.listen( port, () => {
 	console.log( `App is listening on port:${port}` );
 });
