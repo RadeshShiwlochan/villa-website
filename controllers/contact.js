@@ -21,10 +21,19 @@ exports.contactForm = ( req, res ) => {
     const response = JSON.stringify(req.body);
 
     const mailOptions = {
-       from:  'Radesh <radesh0430@gmail.com>',
+       from: `${req.body.email}`,
        to: 'mintrasvilla@gmail.com',
-       subject: 'Inquiry for renting the villa',
-       text: `${response}`
+       subject: `${req.body.firstName} ${req.body.lastName} Inquiry for Villa Rental`,
+       text: `Name: ${req.body.firstName} ${req.body.lastName}
+              Email: ${req.body.email}
+              PhoneNumber:${req.body.phoneNum}
+              Country: ${req.body.county}
+              Arrival Time: ${req.body.arriveTime}
+              Departure Time: ${req.body.departTime}
+              Number of Adults: ${req.body.adults}
+              Number of Children: ${req.body.children}
+              Travel Time Flexible: ${req.body.isSameAddress}
+              Message: ${req.body.message}`
     }  
   transporter.sendMail(mailOptions, function(err, response) {
     if ( err )
