@@ -15,6 +15,9 @@ const termsController = require( './controllers/terms.js' );
 const bookController = require( './controllers/book.js' );
 const contactController = require( './controllers/contact.js' );
 const attractionsController = require( './controllers/attractions.js' );
+const locationController = require('./controllers/location.js' );
+const accomodationsController = require( './controllers/accomodations.js' );
+const facilitiesController = require( './controllers/facilities.js' );
 
 app.get( '/', homeController.index );
 app.get( '/pictures', pictureController.pictureIndex );
@@ -24,6 +27,9 @@ app.get( '/book', bookController.bookIndex );
 app.get( '/contact', contactController.contactIndex );
 app.get( '/image', pictureController.pictureView );
 app.get( '/attractions', attractionsController.attractionsIndex );
+app.get( '/location', locationController.locationIndex );
+app.get( '/accomodations', accomodationsController.accomodationsIndex );
+app.get( '/facilities', facilitiesController.facilitiesIndex );
 
 //post requests
 app.post( '/customerContact', contactController.contactForm );
