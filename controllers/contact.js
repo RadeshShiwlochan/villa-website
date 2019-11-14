@@ -1,3 +1,4 @@
+/*
 const nodemailer = require( 'nodemailer' );
 const xoauth2 = require( 'xoauth2' );
 
@@ -43,3 +44,5 @@ exports.contactForm = ( req, res ) => {
   })
   res.render( 'home' );   
 }
+
+*/
